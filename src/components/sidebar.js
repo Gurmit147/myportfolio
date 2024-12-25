@@ -20,7 +20,7 @@ const Sidebar = () => {
                 <NavLink exact="true" activeclassname = "active" className = "work-link" to="/work">
                     <FontAwesomeIcon icon = {faSuitcase} color = "#dcdfe3" onClick={() => setShowNav(false)} />
                 </NavLink>
-                <NavLink exact="true" activeclassname = "active" className = "portfolio-link" to="/portfolio">
+                <NavLink exact="true" activeclassname = "active" className = "portfolio-link" to="/awards">
                     <FontAwesomeIcon icon = {faFolderOpen} color = "#dcdfe3" onClick={() => setShowNav(false)} />
                 </NavLink>
                 <NavLink exact="true" activeclassname = "active" className = "contact-link" to="/contact">
