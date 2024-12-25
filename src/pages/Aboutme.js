@@ -20,7 +20,7 @@ function Aboutme() {
                         Through award-winning projects like E-Koperasi and participation in competitions such as WorldSkills Malaysia Belia, I’ve honed my skills in React, Django, Firebase, and TensorFlow. I am eager to leverage my expertise in AI and full-stack development to create impactful, cutting-edge solutions in a professional setting.
                     </p>
                     <br></br>
-                        <button className='btn-language' onClick={()=>{navigate('/language')}}>
+                        <button className='btn-language' onClick={()=>{navigate('/languages')}}>
                         <span>NEXT</span>
                         </button>
                 </div>
