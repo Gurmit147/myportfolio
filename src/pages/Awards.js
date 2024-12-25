@@ -60,7 +60,7 @@ function Awards() {
                     <section>
                         <div className="max-w-4xl mx-auto px-6">
                             
-                            <div className="space-y-6 overflow-y-auto max-h-[550px]">
+                            <div className="space-y-6 overflow-y-auto max-h-[600px]">
                                 {achievements.map((achievement, index) => (
                                     <div
                                         key={index}
