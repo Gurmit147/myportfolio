@@ -1,5 +1,5 @@
 .nav-bar {
-    background: #012d66; /* Initial fallback color */
+    background: #012d66; 
     width: 60px;
     height: 100%;
     position: fixed;
@@ -167,7 +167,6 @@
         position: absolute;
         top: 15px;
         right: 15px;
-        z-index: 100;
       }
     }
   }
