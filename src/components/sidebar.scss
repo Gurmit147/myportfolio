@@ -162,17 +162,12 @@
       }
   
       .hamburger-icon,
-    .close-icon {
-      display: block;
-      position: fixed; /* Ensure it stays fixed at the top */
-      top: 15px;
-      right: 15px;
-      z-index: 200; /* Set a higher z-index than other elements */
-      background: transparent;
-      cursor: pointer;
-      padding: 10px;
-    }
-
+      .close-icon {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+      }
     }
   }
   
