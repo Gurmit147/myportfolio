@@ -32,3 +32,9 @@ code {
     margin-top:8%;
   }
 }
+
+@media only screen and (min-width:720px){
+  #portfolio{
+    overflow:hidden;
+  }
+}

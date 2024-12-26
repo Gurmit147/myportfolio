@@ -1,7 +1,7 @@
 import './sidebar.scss'
 import { Link, NavLink } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope, faSuitcase, faFolderOpen, faBars, faClose } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope, faSuitcase, faFolderOpen, faBars, faClose, faTrophy } from '@fortawesome/free-solid-svg-icons'
 
 import { useState } from 'react'
 
@@ -21,7 +21,7 @@ const Sidebar = () => {
                     <FontAwesomeIcon icon = {faSuitcase} color = "#dcdfe3" onClick={() => setShowNav(false)} />
                 </NavLink>
                 <NavLink exact="true" activeclassname = "active" className = "portfolio-link" to="/awards">
-                    <FontAwesomeIcon icon = {faFolderOpen} color = "#dcdfe3" onClick={() => setShowNav(false)} />
+                    <FontAwesomeIcon icon = {faTrophy} color = "#dcdfe3" onClick={() => setShowNav(false)} />
                 </NavLink>
                 <NavLink exact="true" activeclassname = "active" className = "contact-link" to="/contact">
                     <FontAwesomeIcon icon = {faEnvelope} color = "#dcdfe3" onClick={() => setShowNav(false)}/>
