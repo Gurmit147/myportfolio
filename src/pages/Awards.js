@@ -11,6 +11,12 @@ function Awards() {
     const achievements = [
         {
             icon: <FaStar className="text-yellow-500 text-2xl mr-2" />,
+            title: "Data Hackathon",
+            description: "Participated in a Data Analysis Hackathon, gaining valuable experience in data analysis and proficiency in libraries like Pandas.",
+            image: "/images/datahackathon.jpeg",
+        },
+        {
+            icon: <FaStar className="text-yellow-500 text-2xl mr-2" />,
             title: "WorldSkills Malaysia Belia",
             description: "Competed in the prestigious WorldSkills Malaysia Belia series, showcasing technical and problem-solving skills.",
             image: "/images/worldskills.jpeg",
