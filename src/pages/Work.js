@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Sidebar from '../components/sidebar';
 import '../css/webstructure.css';
 import { useNavigate } from 'react-router-dom';
 
 function Work() {
     const navigate = useNavigate(); // Hook for navigating programmatically
+    const [selectedImage, setSelectedImage] = useState(null);
+    const openPopup = (image) => {
+        setSelectedImage(image);
+    };
+
+    const closePopup = () => {
+        setSelectedImage(null);
+    };
+
+    
 
     return (
         <div>
@@ -58,15 +68,35 @@ function Work() {
                 </div>
 
                 <div className="md:w-1/2 mt-8 md:mt-0 md:ml-16 w3-animate-zoom overflow-y-auto max-h-[600px] grid grid-cols-2 gap-4">
-                    <img src='images/1.jpeg' className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"></img>
-                    <img src='images/2.jpeg' className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"></img>
-                    <img src='images/3.jpeg' className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"></img>
-                    <img src='images/4.jpeg' className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"></img>
-                    <img src='images/5.jpeg' className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"></img>
-                    <img src='images/6.jpeg' className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"></img>
+                <img src='images/1.jpeg' className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" onClick={() => openPopup('images/1.jpeg')}></img>
+                <img src='images/2.jpeg' className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" onClick={() => openPopup('images/2.jpeg')}></img>
+                <img src='images/3.jpeg' className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" onClick={() => openPopup('images/3.jpeg')}></img>
+                <img src='images/4.jpeg' className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" onClick={() => openPopup('images/4.jpeg')}></img>
+                <img src='images/5.jpeg' className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" onClick={() => openPopup('images/5.jpeg')}></img>
+                <img src='images/6.jpeg' className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" onClick={() => openPopup('images/6.jpeg')}></img>
+
                 </div>
 
-
+                {selectedImage && (
+                <div
+                    className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
+                    onClick={closePopup}
+                >
+                    <div className="relative">
+                        <img
+                            src={selectedImage}
+                            alt="Popup"
+                            className="max-w-[90vw] max-h-[90vh] object-contain"
+                        />
+                        <button
+                            className="absolute top-2 right-2 text-white text-2xl"
+                            onClick={closePopup}
+                        >
+                            &times;
+                        </button>
+                    </div>
+                </div>
+                )}
                
             </div>
         </div>
