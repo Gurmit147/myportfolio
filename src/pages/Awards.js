@@ -18,8 +18,20 @@ function Awards() {
         {
             icon: <FaStar className="text-yellow-500 text-2xl mr-2" />,
             title: "WorldSkills Malaysia Belia",
-            description: "Competed in the prestigious WorldSkills Malaysia Belia series, showcasing technical and problem-solving skills.",
+            description: "Competed in the prestigious WorldSkills Malaysia Belia series, showcasing technical and problem-solving skills and learned wweb framework such as Laravel, Vue and Wordpress.",
             image: "/images/worldskills.jpeg",
+        },
+        {
+            icon: <FaStar className="text-yellow-500 text-2xl mr-2" />,
+            title: "Pra-Worldskills",
+            description: "Qualified for second round for competition and gained more skills in Javascript",
+            image: "/images/praworldskills.jpeg",
+        },
+        {
+            icon: <FaStar className="text-yellow-500 text-2xl mr-2" />,
+            title: "Polyskills",
+            description: "Attend my first first coding competiton which helped me to gain experience in HTML,CSS,Javascript",
+            image: "/images/polyskills.jpeg",
         },
         {
             icon: <FaClipboardList className="text-yellow-500 text-2xl mr-2" />,
