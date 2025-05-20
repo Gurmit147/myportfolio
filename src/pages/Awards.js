@@ -57,6 +57,12 @@ function Awards() {
             description: "Recognized by Politeknik Seberang Perai with this prestigious award during the convocation for the E-Koperasi project.",
             image: "/images/anugerah.jpeg",
         },
+        {
+            icon: <FaTrophy className="text-yellow-500 text-2xl mr-2" />,
+            title: "Bronze Medal at International Research & Information Science Expo 2025",
+            description: "Achieved Bronze Meddal at IRISE 2025 hosted by Uitm Kelantan",
+            image: "/images/irise.jpg",
+        },
     ];
 
     const openPopup = (image) => {
