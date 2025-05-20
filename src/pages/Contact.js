@@ -15,7 +15,7 @@ function Contact() {
                 </h1>
                 <div className="flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-16 w-full">
                     {/* Facebook Card */}
-                    <div className="bg-gradient-to-r from-blue-500 to-blue-700 p-6 rounded-xl shadow-lg hover:scale-105 transform transition-all duration-300 w-64 text-center">
+                    <div className="bg-gradient-to-r from-blue-500 to-blue-700 p-6 rounded-xl shadow-lg hover:scale-105 transform transition-all duration-300 w-64 text-center hover:cursor-pointer">
                         <FontAwesomeIcon icon={faFacebook} className="text-white text-6xl mb-4" />
                         <h3 className="text-xl font-semibold mb-2">Facebook</h3>
                         <p className="text-gray-200 mb-4">Stay connected with us on Facebook.</p>
@@ -30,7 +30,7 @@ function Contact() {
                     </div>
 
                     {/* Instagram Card */}
-                    <div className="bg-gradient-to-r from-pink-500 to-pink-700 p-6 rounded-xl shadow-lg hover:scale-105 transform transition-all duration-300 w-64 text-center">
+                    <div className="bg-gradient-to-r from-pink-500 to-pink-700 p-6 rounded-xl shadow-lg hover:scale-105 transform transition-all duration-300 w-64 text-center hover:cursor-pointer">
                         <FontAwesomeIcon icon={faInstagram} className="text-white text-6xl mb-4" />
                         <h3 className="text-xl font-semibold mb-2">Instagram</h3>
                         <p className="text-gray-200 mb-4">Follow us on Instagram for the latest updates.</p>
@@ -45,7 +45,8 @@ function Contact() {
                     </div>
 
                     {/* LinkedIn Card */}
-                    <div className="bg-gradient-to-r from-blue-800 to-blue-900 p-6 rounded-xl shadow-lg hover:scale-105 transform transition-all duration-300 w-64 text-center">
+                    <div className="bg-gradient-to-r from-blue-800 to-blue-900 p-6 rounded-xl shadow-lg hover:scale-105 transform transition-all duration-300 w-64 text-center hover:cursor-pointer
+                    ">
                         <FontAwesomeIcon icon={faLinkedin} className="text-white text-6xl mb-4" />
                         <h3 className="text-xl font-semibold mb-2">LinkedIn</h3>
                         <p className="text-gray-200 mb-4">Connect with us professionally on LinkedIn.</p>
@@ -60,7 +61,7 @@ function Contact() {
                     </div>
 
                     {/* GitHub Card */}
-                    <div className="bg-gradient-to-r from-gray-700 to-gray-900 p-6 rounded-xl shadow-lg hover:scale-105 transform transition-all duration-300 w-64 text-center">
+                    <div className="bg-gradient-to-r from-gray-700 to-gray-900 p-6 rounded-xl shadow-lg hover:scale-105 transform transition-all duration-300 w-64 text-center hover:cursor-pointer">
                         <FontAwesomeIcon icon={faGithub} className="text-white text-6xl mb-4" />
                         <h3 className="text-xl font-semibold mb-2">GitHub</h3>
                         <p className="text-gray-200 mb-4">Explore our projects on GitHub.</p>
